@@ -1,0 +1,17 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    {%if user.is_authenticated%}
+        <h2>User: {{request.user.username}}</h2>
+    {%endif%}
+
+    {%for i in x%}
+        <img src={{ i.file.url }}>
+    {%endfor%}
+    
+</body>
+</html>
